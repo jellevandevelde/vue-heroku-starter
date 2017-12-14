@@ -1,7 +1,7 @@
 {
   "name": "Vue Heroku Starter",
   "version": "1.0.0",
-  "description": "A Vue.js project on Heroku. Inspired by: https://medium.com/netscape/deploying-a-vue-js-2-x-app-to-heroku-in-5-steps-tutorial-a69845ace489",
+  "description": "A Vue.js project on Heroku.",
   "author": "Andre Ortiz <hello@andreortiz.com>",
   "private": true,
   "scripts": {
