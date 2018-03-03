@@ -4,6 +4,7 @@ export default {
   data () {
     return {
       msg: 'Welcome to Your Vue.js on Heroku',
+      date: _.toUpper('--foo-bar--'),
     }
   }
 }
@@ -13,7 +14,9 @@ export default {
 span
   h1 hello world
   p {{ msg }}
-  el-button test
+  p {{ new Date() }}
+  p {{ moment([2010, 1, 14, 15, 25, 50, 125]) }}
+  el-button {{'test' | capitalize}}
   el-tag it works
 </template>
 
