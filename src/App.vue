@@ -11,7 +11,9 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+@import './assets/styles/app.scss';
+
 #app {
   font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
 }
