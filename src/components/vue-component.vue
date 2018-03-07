@@ -1,4 +1,6 @@
 <script>
+import firebase from 'firebase'
+
 export default {
   name: 'VueComponent',
   components: {
@@ -8,6 +10,12 @@ export default {
     }
   },
   methods: {
+    logOut() {
+      console.log('log out');
+      firebase.auth().signOut().then(() => {
+        this.$router.push('/login');
+      })
+    },
   },
   computed: {
   },
@@ -15,7 +23,7 @@ export default {
 </script>
 
 <template lang="pug">
-  el-button(type="primary") test button component
+  el-button(type="primary" @click="logOut") Log out
 </template>
 
 <style lang="scss" scoped>
